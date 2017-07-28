@@ -12,7 +12,6 @@ import glob
 
 device_id = 0
 
-
 def readsave(kill):
 
     global dataFolder, dataFile, filename, file_start_time, arduino, file_rollover, SN
