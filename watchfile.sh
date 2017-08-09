@@ -1,7 +1,8 @@
 #!/bin/bash
 
-while inotifywait -m -e modify /home/pete/Documents/Code/wacl_Lattepanda
+while (true)
 do
-	pkill -9 -f liveplotting
+	inotifywait -q -e modify /home/pete/Documents/Code/wacl_Lattepanda
+	pkill -9 -f liveplotting.py
 	python3 /home/pete/Documents/Code/wacl_Lattepanda/liveplotting.py
 done
