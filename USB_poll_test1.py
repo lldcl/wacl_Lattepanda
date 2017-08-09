@@ -41,7 +41,7 @@ def readsave(kill):
     """Load variables from config file"""
     def loadconfig():
         config = configparser.ConfigParser()
-        config.read('/home/pete/Documents/config.INI')
+        config.read('config.INI')
         globals()['variables']=config['DataFileParams']['variables'].splitlines()
         globals()['file_rollover'] = int(config['DataFileParams']['file_rollover'])
         return(globals()['variables'], globals()['file_rollover'])

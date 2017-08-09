@@ -22,10 +22,10 @@ class TimeAxisItem(pg.AxisItem):
 def updateplot(data1):
         global loc
         try:
-                filename = sorted(glob.glob('/home/pete/Documents/Data/'+datetime.datetime.now().strftime("%y_%m_%d")+'/C2D1' + '/*'))[-1]
+                filename = sorted(glob.glob('/home/pete/Documents/Data/'+datetime.datetime.now().strftime("%y_%m_%d")+'/5011' + '/*'))[-1]
         except IndexError:
                 sleep(5)
-                filename = sorted(glob.glob('/home/pete/Documents/Data/'+datetime.datetime.now().strftime("%y_%m_%d")+'/C2D1' + '/*'))[-1]
+                filename = sorted(glob.glob('/home/pete/Documents/Data/'+datetime.datetime.now().strftime("%y_%m_%d")+'/5011' + '/*'))[-1]
         with open(filename) as latestfile:
                 dataline = list(latestfile)[-1].split(',')
         print(filename)
