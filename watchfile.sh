@@ -1,4 +1,5 @@
 #!/bin/bash
+
 while (true)
 do
 	inotifywait -q -e modify /home/pete/Documents/Code/wacl_Lattepanda
