@@ -12,6 +12,7 @@ from collections import deque
 from scipy import stats
 
 
+
 class TimeAxisItem(pg.AxisItem):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
