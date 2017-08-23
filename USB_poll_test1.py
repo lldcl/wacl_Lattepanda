@@ -41,7 +41,7 @@ def readsave(kill):
     """Load variables from config file"""
     def loadconfig():
         config = configparser.ConfigParser()
-        config.read('config.INI')
+        config.read('/home/pete/Documents/Code/wacl_Lattepanda/config.INI')
         globals()['variables']=config['DataFileParams']['variables'].splitlines()
         globals()['file_rollover'] = int(config['DataFileParams']['file_rollover'])
         return(globals()['variables'], globals()['file_rollover'])
